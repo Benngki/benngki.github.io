@@ -49,9 +49,11 @@ var projects = {
     }
 }
 
+
 $(document).ready(function () {
-    // project.html
     var project_title = String(window.location.href.split('project.html#')[1]);
+    $('html head title').text(projects[project_title]['title']);
+    // project.html
     // title
     $("main#project #title").text(projects[project_title]['title']);
     // year
