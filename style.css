@@ -18,13 +18,13 @@ body {
 }
 
 
-nav {
+header {
     min-height: 10vh;
 }
 
-section#home{
+/* section#home{
     padding-top: 10vh;
-}
+} */
 
 nav a.active {
     font-weight: bold;
@@ -166,7 +166,7 @@ footer p {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    nav {
+    header {
         height: 10vh;
     }
 
