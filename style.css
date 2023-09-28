@@ -17,11 +17,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
-header {
-    min-height: 10vh;
-}
-
 /* section#home{
     padding-top: 10vh;
 } */
@@ -144,12 +139,6 @@ footer p {
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-    /* start of home */
-    section#home .row{
-        height: 90vh;
-    }
-    /* end of home */
-
     /* start of contact me */
     section#contact_me #contacts .col .content {
         width: 80%;
@@ -166,13 +155,19 @@ footer p {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    header {
+    nav {
         height: 10vh;
     }
 
     .w-lg-50 {
         width: 50% !important;
     }
+
+    /* start of Home */
+    section#home{
+        height: 90vh;
+    }
+    /* end of Home */
 
     /* start of About Me */
     .title {
