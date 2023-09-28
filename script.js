@@ -1,14 +1,14 @@
 var navHeight = $('nav').outerHeight();
 
-$('nav a').click(function (e) { 
+$('a.nav-link').click(function (e) { 
     // e.preventDefault();
+    var href = $(this).attr("href");
+    
+    $("html, body").animate({ scrollTop: $(href).offset().top - navHeight}, 300);
     
     $('nav a.active').removeClass('active');
     
-    $(this).addClass('active');
-
-    var href = $(this).attr("href");
-    $("html, body").animate({ scrollTop: $(href).offset().top - navHeight}, 300);
+    $(`nav a[href='${href}']`).addClass('active');
 });    
 
 $(document).ready(function () {
