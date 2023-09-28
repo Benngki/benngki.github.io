@@ -1,0 +1,250 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+    --font-montserrat: 'Montserrat', sans-serif;
+    --primary-color: #FFFFFF;
+    --secondary-color: #3E4443;
+
+    --shadow-color: 62,68, 67, 0.3;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+nav {
+    min-height: 10vh;
+}
+
+section#home{
+    padding-top: 10vh;
+}
+
+/* start of About Me */
+.title {
+    border: solid black;
+    border-width: 5px;
+    width: fit-content;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.title > h2 {
+    letter-spacing: 0.4rem;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+#services .role img {
+    opacity: 0.55;
+}
+/* end of About Me */
+
+/* start of portfolio */
+#projects .project_info {
+    display: none;
+}
+
+#projects .project .project_title {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+#projects img {
+    object-fit: cover;
+}
+/* end of portfolio */
+
+/* start of contacts */
+section#contact_me #contacts .col .content {
+    box-shadow: 0 0 20px 10px rgba(var(--shadow-color)); /* offset-x | offset-y | blur-radius | spread-radius | color */
+    width: 90%;
+    height: 100%;
+    padding: 3rem 1.5rem;
+    word-break: break-all;
+    border-radius: 1rem;
+}
+
+section#contact_me #contacts .col .content .eclipse {
+    background-color: var(--secondary-color);
+    width: fit-content;
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+
+section#contact_me #contacts .col .content .eclipse img {
+    width: 3rem;
+    color: var(--primary-color);
+}
+
+section#contact_me #contacts .col .content h6{
+    margin-top: 1rem;
+}
+
+section#contact_me #contacts .col .content p{
+    margin-bottom: 0;
+}
+
+    /* form */  
+    section#contact_me form{
+        width: 90%;
+    }
+
+    section#contact_me form input, section#contact_me form textarea{
+        background-color: rgba(var(--shadow-color));
+        color: black;
+    }
+
+    section#contact_me form input:focus, section#contact_me form textarea:focus{
+        box-shadow: 0 0 20px 5px rgba(var(--shadow-color));
+        border: solid rgb(var(--primary-color));
+    }
+
+    section#contact_me form button[type='submit']{
+        width: 100%;
+        background-color: var(--secondary-color);
+    } 
+/* end of contacts */
+
+/* start of footer */
+footer {
+    background-color: var(--secondary-color);
+    padding: 1rem 2rem ;
+}
+
+footer p {
+    color: #FFFFFF;
+    margin: 0;
+    text-align: center;
+    word-break: break-all;
+}
+/* end of footer */
+
+/* // Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) { 
+ } */
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    nav {
+        height: 10vh;
+    }
+
+    /* start of home */
+    section#home .row{
+        height: 90vh;
+    }
+    /* end of home */
+
+    /* start of contact me */
+    section#contact_me #contacts .col .content {
+        width: 80%;
+    }
+    /* start of contact me */
+    .w-md-75 {
+        width: 75% !important;
+    }
+
+    .vh-md-100 {
+        height: 100vh !important;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .w-lg-50 {
+        width: 50% !important;
+    }
+
+    /* start of About Me */
+    .title {
+        padding: 1rem 2rem;
+    }
+    
+    .title > h2 {
+        letter-spacing: 0.5rem;
+    }
+    /* end of About Me */
+
+    /* start of portfolio */
+    #projects { /* web version */
+        display: flex !important;
+    } 
+
+    #projects .project:hover > img {
+        opacity: 0.3;
+    }
+
+    #projects .project:hover .project_info {
+        display: block;
+    }
+
+    #projects .project:hover p {
+        cursor: default;
+    }
+    /* end of portfolio */
+
+    /* start of contact me */
+    section#contact_me form{
+        width: 60%;
+    }
+    /* end of contact me */
+}
+
+
+.text-justify {
+    text-align: justify;
+}
+
+.fw-bold {
+    color: var(--secondary-color);
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.mt-10vh {
+    margin-top: 10vh;
+}
+
+.min-vh-90 {
+    min-height: 90vh;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    opacity: 0.8;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: solid var(--secondary-color);
+    padding: 0.5rem 1rem;
+}
+
+.letter-spacing_2 {
+    letter-spacing: 0.2rem;
+}
+
+.letter-spacing_1 {
+    letter-spacing: 0.1rem;
+}
+
+/* =============
+    Project Page
+===================*/
+
+main#project h6, main#project h5{
+    font-weight: bold;
+}
