@@ -9,6 +9,10 @@
     --shadow-color: 62,68, 67, 0.3;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -20,6 +24,10 @@ nav {
 
 section#home{
     padding-top: 10vh;
+}
+
+a.active {
+    font-weight: bold;
 }
 
 /* start of About Me */
@@ -128,10 +136,6 @@ footer p {
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-    nav {
-        height: 10vh;
-    }
-
     /* start of home */
     section#home .row{
         height: 90vh;
@@ -154,6 +158,10 @@ footer p {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    nav {
+        height: 10vh;
+    }
+    
     .w-lg-50 {
         width: 50% !important;
     }
