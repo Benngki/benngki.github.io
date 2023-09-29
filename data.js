@@ -1,4 +1,4 @@
-var home_title = "A Computer Science student with a strong interest in Artificial Intelligence. I have attended AI-related courses and seminars, and I have applied my knowledge in projects. I have experience in teamwork, communication, and I am motivated to learn and grow.";
+var home_title = "Is a Computer Science student with a strong interest in Artificial Intelligence. He has attended AI-related courses and seminars, and has applied his knowledge in projects. He has experience in teamwork, communication, and is motivated to learn and grow.";
 
 var about_me_desc = [
 "I am Benediktus Hengki Setiawan, a fifth semester student at Bina Nusantara University majoring in Computer Science.",
