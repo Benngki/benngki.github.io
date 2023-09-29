@@ -17,6 +17,16 @@ $('a.nav-link').click(function (e) {
     scrollTo(href);
 });    
 
+// update home title
+$('#home_title').text(home_title);
+
+// update about me description
+about_me_desc.forEach(e => {
+    $('#about_me_desc').append(`<p>
+    ${e}
+  </p>`);
+});
+
 $(document).ready(function () {
     // saat page pertama kali terbuka menu active akan menyesuaikan section yang dikunjungi
     menus.forEach(href => {
