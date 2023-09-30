@@ -8,9 +8,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body>
+
+    <div id="toggle_switch" class="fixed-bottom">
+        <button type="button" class="dark_btn btn btn-primary d-none" onclick="changeMode('light')">
+          <i class="bi bi-moon-stars-fill fs-3 text-white"></i>
+        </button>
+    
+        <button type="button" class="light_btn btn btn-primary" onclick="changeMode('dark')">
+          <i class="bi bi-brightness-high-fill fs-3 text-white"></i>
+        </button>
+      </div>
 
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">

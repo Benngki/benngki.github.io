@@ -18,7 +18,6 @@ body {
 }
 
 #toggle_switch {
-    /* width: fit-content; */
     display: flex;
     justify-content: end;
     transform: translate(-1rem, -1rem);
@@ -33,18 +32,19 @@ body {
     opacity: 1 !important;
 }
 
-/* html[data-bs-theme="dark"] body  */
-
 #social_icons i {
-    color: var(--secondary-color);
     font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+html[data-bs-theme="dark"] #social_icons i {
+    color: var(--primary-color);
 }
 
 nav a.active {
     font-weight: bold;
 }
 
-/* start of About Me */
 .title {
     border: solid black;
     border-width: 5px;
@@ -53,12 +53,17 @@ nav a.active {
     margin-bottom: 1.5rem;
 }
 
+html[data-bs-theme="dark"] .title {
+    border: solid var(--primary-color);
+}
+
 .title > h2 {
     letter-spacing: 0.4rem;
     margin-bottom: 0;
     font-weight: 500;
 }
 
+/* start of About Me */
 #services .role img {
     opacity: 0.55;
 }
@@ -132,10 +137,20 @@ section#contact_me #contacts .col .content p{
         border: solid rgb(var(--primary-color));
     }
 
+    html[data-bs-theme="dark"] section#contact_me form input:focus, section#contact_me form textarea:focus{
+        box-shadow: 0 0 20px 5px rgba(100,100,100,0.3);
+    }
+
     section#contact_me form button[type='submit']{
         width: 100%;
         background-color: var(--secondary-color);
     } 
+
+    html[data-bs-theme="dark"] button,
+    html[data-bs-theme="dark"] input,
+    html[data-bs-theme="dark"] textarea {
+        border: none;
+    }
 /* end of contacts */
 
 /* start of footer */
@@ -182,13 +197,6 @@ footer p {
         width: 50% !important;
     }
 
-    /* start of Home */
-    section#home{
-        height: 90vh;
-    }
-    /* end of Home */
-
-    /* start of About Me */
     .title {
         padding: 1rem 2rem;
     }
@@ -196,7 +204,12 @@ footer p {
     .title > h2 {
         letter-spacing: 0.5rem;
     }
-    /* end of About Me */
+
+    /* start of Home */
+    section#home{
+        height: 90vh;
+    }
+    /* end of Home */
 
     /* start of portfolio */
     #projects { /* web version */
@@ -228,7 +241,7 @@ footer p {
     text-align: justify;
 }
 
-.fw-bold {
+html[data-bs-theme="light"] .fw-bold {
     color: var(--secondary-color);
 }
 
@@ -251,8 +264,8 @@ footer p {
 .btn-primary {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    padding: 0.5rem 1rem;
     border-color: var(--primary-color);
+    padding: 0.5rem 1rem;
 }
 
 .btn-primary:hover, .btn-secondary:hover {
@@ -266,6 +279,13 @@ footer p {
     background-color: transparent;
     color: var(--secondary-color);
     border: solid var(--secondary-color);
+    padding: 0.5rem 1rem;
+}
+
+html[data-bs-theme="dark"] .btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: solid var(--primary-color);
     padding: 0.5rem 1rem;
 }
 

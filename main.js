@@ -23,6 +23,9 @@ function changeMode(mode) {
     
 }
 
+// default theme
+$('html').attr('data-bs-theme', "light");
+
 $(document).ready(function () {    
     $("main").css('margin-top', navHeight);
 });
