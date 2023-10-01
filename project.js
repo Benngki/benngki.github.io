@@ -21,12 +21,13 @@ $(document).ready(function () {
     // description
     $("main#project #desc").text(projects[project_title]['desc']);
     // photos
-    projects[project_title]['photos'].forEach(photo => {
-        $('#photos').append(
-            `<div class="col">
-                <img class="img-fluid" src="assets/projects/${project_title}/${photo}">
-            </div>`
-        );
-    });
-
+    if (projects[project_title]['photos']) {
+        projects[project_title]['photos'].forEach(photo => {
+            $('#photos').append(
+                `<div class="col d-flex justify-content-center align-items-center">
+                    <img class="img-fluid" src="assets/projects/${project_title}/${photo}" style="max-height:25rem;">
+                </div>`
+            );
+        });
+    }
 });
