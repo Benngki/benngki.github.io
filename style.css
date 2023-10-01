@@ -304,3 +304,7 @@ html[data-bs-theme="dark"] .btn-secondary {
 main#project h6, main#project h5{
     font-weight: bold;
 }
+
+html[data-bs-theme="dark"] main#project #links a {
+    color: whitesmoke !important;
+}
