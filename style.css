@@ -132,7 +132,8 @@ section#contact_me #contacts .col .content p{
         color: black;
     }
 
-    html[data-bs-theme='dark'] section#contact_me form input, section#contact_me form textarea{
+    html[data-bs-theme='dark'] section#contact_me form input, 
+    html[data-bs-theme='dark'] section#contact_me form textarea{
         color: white;
     }
 
