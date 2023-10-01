@@ -132,6 +132,10 @@ section#contact_me #contacts .col .content p{
         color: black;
     }
 
+    html[data-bs-theme='dark'] section#contact_me form input, section#contact_me form textarea{
+        color: white;
+    }
+
     section#contact_me form input:focus, section#contact_me form textarea:focus{
         box-shadow: 0 0 20px 5px rgba(var(--shadow-color));
         border: solid rgb(var(--primary-color));
