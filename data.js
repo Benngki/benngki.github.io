@@ -46,7 +46,7 @@ var projects = {
         'work': '(Android Developer & Machine Learning Engineer)',
         'links': [
             "https://github.com/RamadhanIY/StuntMed_e-health",
-            'https://www.youtube.com/watch?v=S9fQPGfzdpY&list=LL&index=2&t=6s'
+            'https://youtu.be/S9fQPGfzdpY?si=OngHeq-czK69wr4-'
         ],
         'desc': "StuntMed is an innovative application designed to address the global challenge of stunting in children. By integrating advanced Machine Learning algorithms, StuntMed can accurately detect early signs of stunting through various indicators and data inputs. This digital tool simplifies the process of stunting diagnosis, enabling timely interventions and promoting better health outcomes for children at risk. In this project, my role are Project manager and Mobile Developer.",
         'photos': ['2.jpg', '3.jpg', '1.jpg'],
