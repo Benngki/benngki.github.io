@@ -53,7 +53,7 @@ var projects = {
     },
     "dialog-diri": {
         'title': 'Dialog Diri',
-        'year': 'Ongoing',
+        'year': '2023',
         'role': 'Leader',
         'work': '(Fullstack Developer & Machine Learning Engineer)',
         'links': [
