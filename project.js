@@ -21,6 +21,12 @@ $(document).ready(function () {
     // description
     $("main#project #desc").text(projects[project_title]['desc']);
     // photos
+    if (projects[project_title]['photos'].length == 1){
+        $("#photos").addClass('row-cols-lg-1');
+    }else {
+        $("#photos").addClass('row-cols-lg-2');
+    }
+
     if (projects[project_title]['photos']) {
         projects[project_title]['photos'].forEach(photo => {
             $('#photos').append(

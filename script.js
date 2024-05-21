@@ -1,4 +1,5 @@
 var url = window.location.href.split('index.html')[1]
+const resume_url = "assets/Benediktus_resume.pdf"
 
 function navTo(href) {
     $('nav a.active').removeClass('active');
@@ -28,6 +29,9 @@ about_me_desc.forEach(e => {
 });
 
 $(document).ready(function () {
+    // url for resume
+    $("#resume").attr('href', resume_url);
+
     // saat page pertama kali terbuka menu active akan menyesuaikan section yang dikunjungi
     menus.forEach(href => {
         if (window.scrollY >= $('section'+href).position().top - navHeight){
