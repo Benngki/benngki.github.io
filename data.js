@@ -1,10 +1,8 @@
-var home_title = "Is a Computer Science student with a strong interest in Artificial Intelligence. He has attended AI-related courses and seminars, and has applied his knowledge in projects. He has experience in teamwork, communication, and is motivated to learn and grow.";
+var home_title = "";
 
 var about_me_desc = [
-"I am Benediktus Hengki Setiawan, a fifth semester student at Bina Nusantara University majoring in Computer Science.",
-"I have a strong interest in Artificial Intelligence. I have attended various courses and seminars related to AI, and I have applied my knowledge in several projects in lectures. One of my projects is developing a web application that uses AI to classify a sentence as hate speech or not.",
-"I have good teamwork experience. I was once a project team leader in college and managed to complete the project on time. I also have good communication skills and am able to work independently and in groups.",
-"I believe that my skills and experience will be an asset to me and my team in the future. I have a strong motivation to learn and grow."
+"As a dedicated Computer Science student at BINUS University, I'm currently sharpening my expertise through Bangkit Academy's Machine Learning Cohort, an initiative led by tech giants Google, Tokopedia, Gojek, and Traveloka. My academic journey is complemented by a strong command of Python, skills I've demonstrated by securing relevant certifications from Coursera, Kaggle and HackerRank.",
+"Motivated by the transformative potential of AI, I delve into areas like Computer Vision and Natural Language Processing, translating theoretical knowledge into practical solutions. My academic endeavors are guided by a commitment to teamwork and effective communication, laying the groundwork for a future at the forefront of AI innovation.",
 ]
 
 var projects = {
